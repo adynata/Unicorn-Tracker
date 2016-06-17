@@ -1,0 +1,27 @@
+  <div class="add-item grow" ng-click="showInput()">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 400 400" enable-background="new 0 0 400 400">
+    <g id="Layer_1">
+    	<rect class="plus" x="175" width="50" height="400"/>
+    </g>
+    <g id="Layer_2">
+    	<rect class="plus" y="175" width="400" height="50"/>
+    </g>
+    </svg>
+  </div>
+  <div class="pin-input grow">
+    <div class="pin-details">deets</div>
+    <div class="map-loc grow" ng-click="showLatLon()">Map Location</div>
+    <div class="pin-latlon grow">
+      <!-- ng-model here for form validation? -->
+      <input type="text" ng-model="latlon.lat">
+      <input type="text" ng-model="latlon.lon">
+      <input type="submit" val="Log Unicorn"><br>
+      <p ng-click="resetFields()">cancel</p>
+    </div>
+  </div>
+</div>
+<div class="pins-list">
+  <ul>
+    <li ng-repeat="unicorn in pins">{{unicorn.lat}} {{unicorn.id}}</li>
+  </ul>
+</div>

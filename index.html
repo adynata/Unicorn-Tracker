@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>Relola Coding Challenge</title>
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <!-- Mapbox Styles -->
+    <link href='//api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="lib/styles/main.css">
+
+  </head>
+  <body data-ng-app="unicornTracker">
+    <div class="container" ng-controller="mapController">
+      <header>
+        <h1 class="map-title">{{ title }}</h1>
+      </header>
+
+      <unicorn-map id="map" can-place-marker="pinCanBePlaced" latlon="latlon"></unicorn-map>
+      <pins-dashboard pin-can-be-placed="togglePinPermission()" latlon="latlon"></pins-dashboard>
+
+    </div>
+
+    <!-- bower components -->
+    <script src="bower_components/limit.js/limit.js"></script>
+
+    <!-- angular -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <!-- app -->
+    <script type="text/javascript" src="lib/scripts/angular/app.js"></script>
+
+    <!-- services -->
+    <script type="text/javascript" src="lib/scripts/angular/services/pinService.js"></script>
+
+    <!-- controllers -->
+    <script type="text/javascript" src="lib/scripts/angular/controllers/appController.js"></script>
+    <script type="text/javascript" src="lib/scripts/angular/controllers/unicornMapController.js"></script>
+    <script type="text/javascript" src="lib/scripts/angular/controllers/pinsDashController.js"></script>
+
+    <!-- directives -->
+    <script type="text/javascript" src="lib/scripts/angular/directives/pinsDash.js"></script>
+    <script type="text/javascript" src="lib/scripts/angular/directives/unicornMap.js"></script>
+
+
+
+  </body>
+</html>

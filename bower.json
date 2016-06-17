@@ -1,0 +1,22 @@
+{
+  "name": "Relola",
+  "version": "0.0.0",
+  "authors": [
+    "Claire Woods <clairewoods@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "adynata.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "limit.js": "limit#*"
+  }
+}
