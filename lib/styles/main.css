@@ -157,3 +157,16 @@ unicorn-map {
   -webkit-transform: scaleY(0);
   -webkit-transform-origin: 50% 50%;
  }
+
+ .pins-list {
+   width: 90%;
+   height: calc(100% - 80px);
+   margin-left: auto;
+   margin-right: auto;
+   background-color: lightpink;
+   overflow: scroll;
+ }
+
+ .pins-list ul {
+   list-style-type: none;
+ }
