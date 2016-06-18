@@ -125,6 +125,7 @@ unicorn-map {
  .latlon {
    width: 40%;
    margin-left: 5%;
+   font-size: 0.6em;
  }
 
  .button {
