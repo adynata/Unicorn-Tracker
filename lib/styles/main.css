@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   color: #111;
+  overflow: hidden;
 }
 
 header {
@@ -168,5 +169,13 @@ unicorn-map {
  }
 
  .pins-list ul {
+   width: 100%;
    list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+
+ .pins-list li {
+   background-color: blue;
+   padding: 5px;
  }
