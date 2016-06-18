@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset=utf-8 />
-    <title>Relola Coding Challenge</title>
+    <title>Unicorn Tracker</title>
 
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
@@ -26,8 +26,8 @@
         <h1 class="map-title">{{ title }}</h1>
       </header>
 
-      <unicorn-map id="map" can-place-marker="pinCanBePlaced" latlon="latlon"></unicorn-map>
-      <pins-dashboard pin-can-be-placed="togglePinPermission()" latlon="latlon"></pins-dashboard>
+      <unicorn-map id="map" can-place-marker="pinCanBePlaced" temp-pin-reset="tempPinReset" latlon="latlon"></unicorn-map>
+      <pins-dashboard pin-can-be-placed="togglePinPermission()" delete-temp-pin="deleteTempPin()" latlon="latlon"></pins-dashboard>
 
     </div>
 
@@ -51,8 +51,6 @@
     <!-- directives -->
     <script type="text/javascript" src="lib/scripts/angular/directives/pinsDash.js"></script>
     <script type="text/javascript" src="lib/scripts/angular/directives/unicornMap.js"></script>
-
-
 
   </body>
 </html>
