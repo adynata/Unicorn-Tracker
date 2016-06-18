@@ -24,6 +24,6 @@
 </div>
 <div class="pins-list grow">
   <ul>
-    <li ng-repeat="unicorn in pins">{{unicorn.properties.title}} {{unicorn.desc}}</li>
+    <li ng-click="showUnicorn(unicorn.properties.id)" ng-repeat="unicorn in pins">{{unicorn.properties.title}} {{unicorn.desc}}</li>
   </ul>
 </div>
