@@ -27,7 +27,7 @@
       </header>
 
       <unicorn-map id="map" map-refresh="mapRefresh" can-place-marker="pinCanBePlaced" pin-data="pinData"></unicorn-map>
-      <pins-dashboard toggle-pin-permission="togglePinPermission()" set-map="setMap()" pin-data="pinData"></pins-dashboard>
+      <pins-dashboard activate-pin-permission="pinPermissionActivated()" deactivate-pin-permission="pinPermissionDeactivated()" set-map="setMap()" pin-data="pinData"></pins-dashboard>
 
     </div>
 
@@ -42,6 +42,7 @@
 
     <!-- services -->
     <script type="text/javascript" src="lib/scripts/angular/services/pinService.js"></script>
+    <script type="text/javascript" src="lib/scripts/angular/services/initValsService.js"></script>
 
     <!-- controllers -->
     <script type="text/javascript" src="lib/scripts/angular/controllers/appController.js"></script>
@@ -49,7 +50,6 @@
     <script type="text/javascript" src="lib/scripts/angular/controllers/pinsDashController.js"></script>
 
     <!-- directives -->
-    <script type="text/javascript" src="lib/scripts/angular/directives/latlon.js"></script>
     <script type="text/javascript" src="lib/scripts/angular/directives/pinsDash.js"></script>
     <script type="text/javascript" src="lib/scripts/angular/directives/unicornMap.js"></script>
 
