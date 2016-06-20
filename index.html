@@ -23,7 +23,7 @@
   <body data-ng-app="unicornTracker">
     <div class="container" ng-controller="mapController">
       <header>
-        <h1 class="map-title">{{ ::title }}</h1>
+        <h1 class="map-title">{{::title}}</h1>
       </header>
 
       <unicorn-map id="map" map-refresh="mapRefresh" can-place-marker="pinCanBePlaced" pin-data="pinData"></unicorn-map>
