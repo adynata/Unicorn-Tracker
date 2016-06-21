@@ -1,0 +1,22 @@
+{
+  "name": "unicorn-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adynata/Unicorn-Tracker.git"
+  },
+  "author": "Claire Woods",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adynata/Unicorn-Tracker/issues"
+  },
+  "homepage": "https://github.com/adynata/Unicorn-Tracker#readme",
+  "devDependencies": {
+    "angular": "^1.5.7"
+  }
+}
