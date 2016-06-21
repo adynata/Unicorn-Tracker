@@ -13,7 +13,7 @@
     <form ng-submit="submitPin()">
       <div class="pin-details">
         <input placeholder="Unicorn species" ng-change="updateTitle(title)" ng-model="title"><br/>
-        <textarea placeholder="Description" ng-change="updateDesc(desc)" ng-model="desc">></textarea><br/>
+        <textarea placeholder="Description" ng-change="updateDesc(desc)" ng-model="desc"></textarea><br/>
       </div>
       <div class="map-loc grow" ng-click="showLatLon()">Map Location</div>
       <div class="pin-latlon grow">
@@ -27,6 +27,6 @@
 </div>
 <div class="pins-list grow">
   <ul>
-    <li ng-click="showUnicorn(unicorn.properties.id)" ng-repeat="unicorn in pins"><img src="lib/images/unicorn.png"/>&nbsp;&nbsp;{{unicorn.properties.title}}</li>
+    <li ng-click="showUnicorn(unicorn.properties.id)" ng-repeat="unicorn in pins"><img src="lib/images/unicorn.png"/>&nbsp;&nbsp;{{unicorn.properties.unicornTitle}}</li>
   </ul>
 </div>
