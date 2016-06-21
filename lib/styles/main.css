@@ -43,3 +43,12 @@ unicorn-map {
   bottom: 0;
   margin-bottom: 50px;
 }
+
+.leaflet-popup-content-wrapper, .map-legends, .map-tooltip {
+  box-shadow: 6px 6px 6px rgba(0,0,0,.1);
+}
+
+.leaflet-popup-content-wrapper h2 {
+  text-transform: uppercase;
+  margin: 0px;
+}
